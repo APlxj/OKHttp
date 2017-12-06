@@ -183,7 +183,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()) {
             case R.id.tv:
                 String url = "http://h.hiphotos.baidu.com/image/pic/item/279759ee3d6d55fb2d12cf5567224f4a21a4dde9.jpg";
-                downloadBinder.startDownload(url);
+                String url2 = "http://shouji.360tpcdn.com/171201/b89086bc4fbc7233df8523437bad3ed0/com.tencent.mobileqq_758.apk";
+//                downloadBinder.startDownload(url);
+                downloadBinder.startDownload(url2);
                 break;
         }
     }

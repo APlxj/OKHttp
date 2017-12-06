@@ -177,9 +177,9 @@ public class DownloadService extends Service {
          */
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
         //设置通知的小图标
-        builder.setSmallIcon(R.mipmap.ic_launcher);
+        builder.setSmallIcon(R.mipmap.download);
         //设置通知的大图标，当下拉系统状态栏时，就可以看到设置的大图标
-        builder.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher));
+        builder.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.download));
         //当通知被点击的时候，跳转到MainActivity中
         builder.setContentIntent(pi);
         //设置通知的标题
