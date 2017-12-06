@@ -41,7 +41,7 @@ public class OkHttp implements ICallBack {
     //_get() _post()：同步
 
     private static OkHttp mInstance;
-    private static OkHttpClient mOkHttpClient;
+    public static OkHttpClient mOkHttpClient;
     private Handler mHandler;//主线程的handler
     protected static final String VERSION = "1.0.1";//版本
     private static final long ConnectTimeout = 10;//设置连接的超时时间
@@ -66,7 +66,7 @@ public class OkHttp implements ICallBack {
      *
      * @return OkHttpUtils
      */
-    private synchronized static OkHttp getmInstance() {
+    public synchronized static OkHttp getmInstance() {
         if (mInstance == null) {
             synchronized (VERSION) {
                 if (mInstance == null)
